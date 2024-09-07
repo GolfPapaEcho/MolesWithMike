@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                <li><a href="{{ "/about" | relative_url }}">About</a></li>
+                <li><a href="{{ "/alevels" | relative_url }}">A-Levels</a></li>
+                <li><a href="{{ "/organic" | relative_url }}">Organic</a></li>
+                <li><a href="{{ "/inorganic" | relative_url }}">Inorganic</a></li>
+                <li><a href="{{ "/physical" | relative_url }}">Physical</a></li>
+                <li><a href="{{ "/theoretical" | relative_url }}">Theoretical</a></li>
+                <li><a href="{{ "/computational" | relative_url }}">Computational</a></li>
+                <li><a href="{{ "/engineering" | relative_url }}">Engineering</a></li>
+                <li><a href="{{ "/practicals" | relative_url }}">Practicals</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 {{ site.title }}</p>
+    </footer>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
+
