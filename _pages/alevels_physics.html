@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,24 +18,26 @@
 <body>
     <header>
         <h1>Moles with Mike</h1>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="alevels.html">A-Levels</a></li>
-                <li><a href="alevels_chemistry.html">Chemistry</a></li>
-                <li><a href="alevels_physics.html">Physics</a></li>
-                <li><a href="alevels_maths.html">Maths</a></li>
-                <li><a href="organic.html">Organic</a></li>
-                <li><a href="inorganic.html">Inorganic</a></li>
-                <li><a href="physical.html">Physical</a></li>
-                <li><a href="theoretical.html">Theoretical</a></li>
-                <li><a href="computational.html">Computational</a></li>
-                <li><a href="engineering.html">Engineering</a></li>
-                <li><a href="practicals.html">Practicals</a></li>
-            </ul>
-        </nav>
     </header>
+<nav>
+    <ul class="navbar">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/alevels/' | relative_url }}">A-Levels</a></li>
+        <ul>
+            <li><a href="{{ '/alevels/chemistry/' | relative_url }}">Chemistry</a></li>
+            <li><a href="{{ '/alevels/physics/' | relative_url }}">Physics</a></li>
+            <li><a href="{{ '/alevels/maths/' | relative_url }}">Maths</a></li>
+        </ul>
+        <li><a href="{{ '/organic/' | relative_url }}">Organic</a></li>
+        <li><a href="{{ '/inorganic/' | relative_url }}">Inorganic</a></li>
+        <li><a href="{{ '/physical/' | relative_url }}">Physical</a></li>
+        <li><a href="{{ '/theoretical/' | relative_url }}">Theoretical</a></li>
+        <li><a href="{{ '/computational/' | relative_url }}">Computational</a></li>
+        <li><a href="{{ '/engineering/' | relative_url }}">Engineering</a></li>
+        <li><a href="{{ '/practicals/' | relative_url }}">Practicals</a></li>
+    </ul>
+</nav>
 
     <div class="parallax">
         <div class="parallax-content">

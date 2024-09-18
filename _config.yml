@@ -24,6 +24,11 @@ url: "http://your-site-url.com" # Update with your URL
 theme: minima
 plugins:
   - jekyll-feed
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 your_email: moleswithmike@outlook.com
 github_username:  GolfPapaEcho
 
