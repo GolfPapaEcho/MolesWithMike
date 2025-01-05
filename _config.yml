@@ -25,26 +25,26 @@ theme: minima
 plugins:
   - jekyll-feed
 collections:
-    alevels_chemistry:
-      output: true
-    alevels_maths:
-      output: true
-    alevels_physics:
-      output: true
-    computational:
-      output: true
-    engineering:
-      output: true
-    inorganic:
-      output: true
-    organic: true
-      output: true
-    physical:
-      output: true
-    practicals:
-      output: true
-    theoretical:
-      output: true         
+  alevels_chemistry:
+    output: true
+  alevels_maths:
+    output: true
+  alevels_physics:
+    output: true
+  computational:
+    output: true
+  engineering:
+    output: true
+  inorganic:
+    output: true
+  organic: true
+    output: true
+  physical:
+    output: true
+  practicals:
+    output: true
+  theoretical:
+    output: true         
 
 your_email: moleswithmike@outlook.com
 github_username:  GolfPapaEcho
