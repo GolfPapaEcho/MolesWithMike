@@ -37,7 +37,7 @@ collections:
     output: true
   inorganic:
     output: true
-  organic: true
+  organic:
     output: true
   physical:
     output: true
