@@ -25,7 +25,6 @@ theme: minima
 plugins:
   - jekyll-feed
 collections:
-  pages:
     alevels_chemistry:
       output: true
     alevels_maths:
