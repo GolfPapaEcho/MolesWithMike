@@ -1,12 +1,29 @@
 ---
-title:  Moles with Mike
-layout:  default
-permalink:  /home/
+# index.html
 ---
-
-<ul>
-  {% for page in site.pages %}
-    <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/physical">Physical</a></li>
+            <li><a href="/inorganic">Inorganic</a></li>
+            <li><a href="/organic">Organic</a></li>
+            <li><a href="/practical">Practical</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>{{ site.time | date: "%Y" }} Moles with Mike. All rights reversed.</p>
+    </footer>
+</body>
+</html>
