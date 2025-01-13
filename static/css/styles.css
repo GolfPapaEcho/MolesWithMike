@@ -1,100 +1,83 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
+---
+# assets/css/style.css
+---
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
-}
-
-h1 {
+    padding: 1rem 0;
     text-align: center;
 }
 
-nav {
-    margin-top: 10px;
+header h1 {
+    margin: 0;
 }
 
-ul.navbar {
-    list-style: none;
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background: #444;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    list-style: none;
 }
 
-ul.navbar li {
-    display: inline;
-    margin: 0 10px;
+.nav-links li {
+    margin: 0;
 }
 
-ul.navbar a {
+.nav-links a {
+    display: block;
+    padding: 0.75rem 1.5rem;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-ul.navbar a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+    background: #555;
 }
 
-/* Parallax effect */
-.parallax {
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    position: relative;
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #333;
     color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
-.parallax-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/* Main content */
-.container {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+.search-form button:hover {
+    background: #555;
 }
 
 footer {
+    text-align: center;
+    padding: 1rem 0;
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    position: absolute;
     width: 100%;
+    bottom: 0;
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    ul.navbar li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .parallax {
-        height: 200px;
-    }
-
-    .parallax-content h2 {
-        font-size: 1.5em;
-    }
-}
-

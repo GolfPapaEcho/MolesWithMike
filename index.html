@@ -1,4 +1,5 @@
 ---
+---
 # index.html
 ---
 <!DOCTYPE html>
@@ -15,15 +16,19 @@
         <p>{{ site.description }}</p>
     </header>
     <nav>
-        <ul>
+        <ul class="nav-links">
             <li><a href="/physical/">Physical</a></li>
             <li><a href="/inorganic/">Inorganic</a></li>
             <li><a href="/organic/">Organic</a></li>
             <li><a href="/practical/">Practical</a></li>
         </ul>
+        <form action="/search/" method="get" class="search-form">
+            <input type="text" name="q" placeholder="Search posts...">
+            <button type="submit">Search</button>
+        </form>
     </nav>
     <footer>
-        <p>{{ site.time | date: "%Y" }} Moles with Mike. All rights reversed.</p>
+        <p>All rights reversed. {{ site.time | date: "%Y" }} Moles with Mike.</p>
     </footer>
 </body>
 </html>
